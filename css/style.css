@@ -1,0 +1,147 @@
+html {
+  width: 100%;
+  height: 100%;
+}
+
+html body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+html body svg {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+}
+
+html body svg path {
+  fill: #8080ff;
+  fill-opacity: .2;
+}
+
+html body svg #path8 {
+  -webkit-animation: movewave 4s infinite alternate ease-in-out;
+          animation: movewave 4s infinite alternate ease-in-out;
+}
+
+html body svg #path10 {
+  -webkit-animation: movewave 6s infinite alternate ease-in-out;
+          animation: movewave 6s infinite alternate ease-in-out;
+}
+
+html body svg #path12 {
+  -webkit-animation: movewave 8s infinite alternate ease-in-out;
+          animation: movewave 8s infinite alternate ease-in-out;
+}
+
+html body svg #path14 {
+  -webkit-animation: movewave 10s infinite alternate ease-in-out;
+          animation: movewave 10s infinite alternate ease-in-out;
+}
+
+@-webkit-keyframes movewave {
+  from {
+    -webkit-transform: translate(10%, 0);
+            transform: translate(10%, 0);
+  }
+  to {
+    -webkit-transform: translate(-30%, 0);
+            transform: translate(-30%, 0);
+  }
+}
+
+@keyframes movewave {
+  from {
+    -webkit-transform: translate(10%, 0);
+            transform: translate(10%, 0);
+  }
+  to {
+    -webkit-transform: translate(-30%, 0);
+            transform: translate(-30%, 0);
+  }
+}
+
+html body .container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: -webkit-gradient(linear, left bottom, left top, from(#000080), to(#8080ff));
+  background: linear-gradient(0deg, #000080 0%, #8080ff 100%);
+  mix-blend-mode: lighten;
+}
+
+html body .container #title {
+  width: 544px;
+  margin: auto;
+  padding: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #fff;
+  background-image: url("../img/title-background.png");
+  background-size: contain;
+  background-position: bottom right;
+  background-repeat: no-repeat;
+  border-radius: 4px;
+}
+
+html body .container #title h1 {
+  margin: 64px 0 192px;
+  padding: 0 32px;
+  color: #fff;
+  mix-blend-mode: difference;
+}
+
+html body .container #title p {
+  margin: 16px auto;
+  padding: 0 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: justify;
+}
+
+html body .container #title .description {
+  margin: 64px auto 16px;
+  text-indent: 9%;
+  font-size: small;
+  mix-blend-mode: difference;
+  color: #fff;
+}
+
+html body .container #title .info {
+  padding: 16px 32px;
+  background: #fff;
+  color: #000;
+  border-radius: 4px;
+}
+
+html body .container #title:hover {
+  background-color: #000;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+/*# sourceMappingURL=style.css.map */
